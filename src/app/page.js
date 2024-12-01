@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faKey, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -11,17 +11,17 @@ export default function Home() {
           <Image src="/images/bg-login.jpg" alt="image-login" width={800} height={800} className="object-cover w-full h-48 rounded-t-lg" />
         </div>
         <div className="p-6">
-          <h2 className="text-2xl font-bold text-center mb-4">Login</h2>
+          <h2 className="text-2xl font-bold text- mb-4">Login</h2>
           <div className="mb-2">
             <div className="flex items-center py-2">
-              <FontAwesomeIcon icon={faUser} className="text-pink-500 mr-2 " style={{ fontSize: 20 }}></FontAwesomeIcon>
-              <input type="text" placeholder="Username" className="appearance-none bg-pink-300 rounded-xl border-none w-full  text-gray-700 mr-3 py-1.5 px-2 leading-tight focus:outline-none " />
+              <FontAwesomeIcon icon={faUser} className="text-pink-500 mr-2 fa-sm " style={{ fontSize: 2, width: 20 }} />
+              <input type="text" placeholder="Username" className="appearance-none bg-pink-500  rounded-xl border-none w-full placeholder-white  text-white mr-3 py-1.5 px-2 leading-tight focus:outline-none " />
             </div>
           </div>
           <div className="mb-4">
             <div className="flex items-center py-2">
-              <i className="fas fa-lock text-pink-500 mr-2"></i>
-              <input type="password" placeholder="Password" className="appearance-none bg-pink-300 rounded-xl border-none w-full text-gray-700 mr-3 py-1.5 px-2 leading-tight focus:outline-none" />
+              <FontAwesomeIcon icon={faKey} className="text-pink-500 mr-2 fa-sm " style={{ fontSize: 2, width: 20 }} />
+              <input type="password" placeholder="Password" className="appearance-none bg-pink-500 rounded-xl border-none w-full text-white placeholder-white mr-3 py-1.5 px-2 leading-tight focus:outline-none" />
             </div>
           </div>
           <div className="flex items-center justify-between mb-4">
