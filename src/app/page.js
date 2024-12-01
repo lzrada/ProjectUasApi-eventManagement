@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKey, faUser } from "@fortawesome/free-solid-svg-icons";
-
+import Link from "next/link";
+// import { useRef } from "react";
 export default function Home() {
+  // const reff = useRef();
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Image src="/images/bg-login.jpg" alt="bg-login" className="bg-image" fill={true} />
@@ -29,15 +31,15 @@ export default function Home() {
               <input type="checkbox" className="form-checkbox text-purple-500" />
               <span className="ml-2 text-sm text-gray-600">remember me</span>
             </label>
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-800">
+            <Link href="/forgot-password" className="text-sm text-gray-600 hover:text-gray-800">
               forgot password
-            </a>
+            </Link>
           </div>
           <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded w-full mb-4">Login</button>
           <div className="text-center">
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-800">
+            <Link href="/register" className="text-sm text-gray-600 hover:text-gray-800">
               Create Account
-            </a>
+            </Link>
           </div>
         </div>
       </div>
